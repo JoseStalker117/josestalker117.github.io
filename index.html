@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/3097/3097144.png" type="image/png">
+  <title>Portafolio - Jose Ibarra</title>
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav id="navbar">
+    <a href="#hero">Inicio</a>
+    <a href="#about">Sobre mí</a>
+    <a href="#projects">Proyectos</a>
+    <a href="#contact">Contacto</a>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <img src="profile.jpg" alt="Foto de perfil">
+    <h1>José Miguel Angel Ibarra Velázquez</h1>
+    <p>Desarrollador de Software | Gestión de Proyectos</p>
+  </section>
+
+  <!-- About -->
+  <section id="about">
+    <h2>Sobre mí</h2>
+    <p>Apasionado por la tecnología, con una sólida formación en desarrollo de software y soporte técnico. He trabajado en áreas como control de inventarios, automatización, soporte en laboratorios y entornos de desarrollo. Me gusta mantenerme en constante aprendizaje y siempre busco formas de innovar con la tecnología.
+    </p>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects">
+   <h2>Proyectos</h2>
+<div class="projects-container">
+
+  <div class="project">
+    <h3>Ocupación actual</h3>
+    <p>Practicante de ingeniero de datos en Falabella México, calidad de datos, monitoreo de procesos, refactorización de procesos e implementación de nuevas funcionalidades.</p>
+    <small>Año: 2025</small>
+  </div>
+
+  <div class="project">
+    <h3>Proyecto BioInsight Modbus</h3>
+    <p>Complemento de los módulos Atlas, este módulo mide la calidad de aire de los reactores de microalgas.</p>
+    <small>Año: 2025</small>
+    <small>Tecnologías: Modbus, IoT</small>
+  </div>
+
+  <div class="project">
+    <h3>Inicio del proyecto BioInsight</h3>
+    <p>Aplicación propia para el personal del laboratorio de remediación, que permite almacenar y consultar información de los kits aquaponics (módulos Atlas). Utiliza arquitectura en la nube y cuenta con app móvil nativa en Android y página web con React.</p>
+    <small>Año: 2024</small>
+    <small>Tecnologías: React, Android, Arquitectura en la nube</small>
+  </div>
+
+  <div class="project">
+    <h3>Instalación de kits aquaponics</h3>
+    <p>Armado, configuración, calibración y capacitación de personal sobre los kits de aquaponics en la Facultad de Agronomía.</p>
+    <small>Año: 2024</small>
+  </div>
+
+  <div class="project">
+    <h3>Proyecto integrador II</h3>
+    <p>Desarrollo de una app móvil y web para la gestión de pedidos y menú de cafetería, integrando una consola IoT que muestra la información del pedido actual para despachar, emitiendo sonido.</p>
+    <small>Año: 2024</small>
+    <small>Tecnologías: IoT, React, App móvil</small>
+  </div>
+
+  <div class="project">
+    <h3>Remediación Inyector de CO2</h3>
+    <p>Dispositivo basado en Arduino que inyecta CO2 de manera medida y controlada, ganando el primer lugar en los carteles CUNORTE de Guadalajara.</p>
+    <small>Año: 2023</small>
+    <small>Tecnologías: Arduino, IoT</small>
+  </div>
+
+  <div class="project">
+    <h3>Proyecto integrador I</h3>
+    <p>Desarrollo de un refrigerador portátil basado en una celda Peltier, optimizando los recursos para mayor autonomía.</p>
+    <small>Año: 2020</small>
+    <small>Tecnologías: Celda Peltier, Electrónica</small>
+  </div>
+
+</div>
+  </section>
+
+  <!-- Contact -->
+  <footer id="contact">
+    <h2>Contacto</h2>
+    <p>Conéctame en:</p>
+    <div class="contact-links">
+      <a href="https://github.com/JoseStalker117" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+      <a href="https://www.linkedin.com/in/jos%C3%A9-miguel-angel-ibarra-vel%C3%A1zquez-86935a385/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+      <a href="mailto:josem.vlqz23@gmail.com"><i class="fas fa-envelope"></i> Email</a>
+    </div>
+  </footer>
+
+  <!-- Script Navbar -->
+  <script>
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 50) {
+        navbar.classList.add('scrolled');
+      } else {
+        navbar.classList.remove('scrolled');
+      }
+    });
+  </script>
+
+</body>
+</html>
